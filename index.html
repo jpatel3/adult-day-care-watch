@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adult Day Care Watch</title>
+<meta name="description" content="Public data on Medicaid-funded adult day care by state: statewide money, every licensed provider with owner and contact details, enforcement history, and things worth a look.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" integrity="sha512-h9FcoyWjHcOcmEVkxOfTLnmZFWIH0iZhZT1H2TbOq55xssQGEJHEaIm+PgoUaZbRvQTNTluNOEfb1ZRy6D3BOw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.min.css" integrity="sha512-ENrTWqddXrLJsQS2A86QmvA17PkJ0GVm1bqj5aTgpeMAfDKN2+SIOLpKG8R/6KkimnhTb+VW5qqUHB/r1zaRgg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.min.css" integrity="sha512-fYyZwU1wU0QWB4Yutd/Pvhy5J1oWAwFXun1pt+Bps04WSe4Aq6tyHlT4+MHSJhD8JlLfgLuC4CbCnX5KHSjyCg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%232a78d6%27/%3E%3Cpath d=%27M8 22V12l8-5 8 5v10H8z%27 fill=%27%23fff%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap header-row">
+    <div class="brand">
+      <h1>Adult Day Care Watch</h1>
+      <p class="tagline">Where the Medicaid adult day care money goes, who is licensed to receive it, and what regulators have found. Public sources only.</p>
+    </div>
+    <div class="header-controls">
+      <label class="state-label" for="state-picker" hidden>State</label>
+      <select id="state-picker" hidden aria-label="State"></select>
+      <a class="gh" href="https://github.com/jpatel3/adult-day-care-watch" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <nav class="wrap" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="overview" aria-selected="true" aria-controls="tab-overview">Overview</button>
+    <button role="tab" data-tab="providers" aria-selected="false" aria-controls="tab-providers">Providers</button>
+    <button role="tab" data-tab="enforcement" aria-selected="false" aria-controls="tab-enforcement">Enforcement</button>
+    <button role="tab" data-tab="methodology" aria-selected="false" aria-controls="tab-methodology">Methodology &amp; sources</button>
+    <button role="tab" data-tab="howto" aria-selected="false" aria-controls="tab-howto">Add your state</button>
+  </nav>
+</header>
+
+<main id="main" class="wrap">
+  <p id="loading" class="muted">Loading data…</p>
+  <section id="tab-overview" role="tabpanel" aria-labelledby="overview" hidden></section>
+  <section id="tab-providers" role="tabpanel" hidden></section>
+  <section id="tab-enforcement" role="tabpanel" hidden></section>
+  <section id="tab-methodology" role="tabpanel" hidden></section>
+  <section id="tab-howto" role="tabpanel" hidden></section>
+</main>
+
+<aside id="drawer" class="drawer" hidden aria-label="Provider details" role="dialog" aria-modal="false">
+  <div class="drawer-head">
+    <h2 id="drawer-title"></h2>
+    <button id="drawer-close" class="icon-btn" aria-label="Close details">×</button>
+  </div>
+  <div id="drawer-body"></div>
+</aside>
+
+<footer class="site-footer wrap">
+  <p id="data-as-of"></p>
+  <p>Code MIT, compiled data CC0. Flags are facts computed from public columns, labeled "worth a look". Nothing here is an accusation or legal advice. <a href="https://github.com/jpatel3/adult-day-care-watch/blob/main/CONTRIBUTING.md" rel="noopener">Contribute a state</a>.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js" integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" integrity="sha512-puJW3E/qXDqYp9IfhAI54BJEaWIfloJ7JWs7OeD5i6ruC9JZL1gERT1wjtwXFlh7CjE7ZJ+/vcRZRkIYIb6p4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js" integrity="sha512-TiMWaqipFi2Vqt4ugRzsF8oRoGFlFFuqIi30FFxEPNw58Ov9mOy6LgC05ysfkxwLE0xVeZtmr92wVg9siAFRWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.0/marked.min.js" integrity="sha512-tjg8I2d6Fi0OBGz1csmr7RfI4uupYaCfL/RqhVRTS42RMGwfBsjwBGmhzhI+e2dPmyew8cFkoxnVkGvADDLvbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

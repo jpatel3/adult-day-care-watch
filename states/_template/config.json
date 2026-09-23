@@ -1,0 +1,34 @@
+{
+  "_comment": "Copy this folder to states/<two-letter-code>/ and fill every field. Delete keys starting with _ if you like; the viewer ignores them.",
+  "id": "xx",
+  "name": "Your State",
+  "program_name": "What the state calls the licensed, Medicaid-billing kind of adult day care",
+  "regulator": "Agency that licenses it, and the rule citation",
+  "payer_program": "Medicaid program name and how it pays (fee-for-service, managed care plans)",
+  "data_as_of": "YYYY-MM-DD",
+  "compiled_on": "YYYY-MM-DD",
+  "map_center": [0.0, 0.0],
+  "map_zoom": 7,
+  "bbox": [0.0, 0.0, 0.0, 0.0],
+  "_bbox": "[min_lat, min_lng, max_lat, max_lng]; the validator rejects coordinates outside it",
+  "billing_rules": "One or two sentences: what counts as a billable day, hours required, days per week cap, who decides eligibility",
+  "per_diem": [
+    { "effective": "YYYY-MM-DD", "rate": 0.0, "source": "https://...", "note": "optional" }
+  ],
+  "spending": [
+    { "year": 2023, "paid": 0.0, "recipients": 0, "partial": false, "source": "https://..." }
+  ],
+  "spending_source_note": "Where the spending series comes from and what it includes",
+  "payers": [
+    { "name": "Managed care plan", "paid": 0.0, "window": "years covered", "source": "https://..." }
+  ],
+  "narrative": {
+    "how_paid": "Markdown. How a center gets paid and who decides eligibility.",
+    "what_not_public": "Markdown. What you could not find and how to request it.",
+    "assessment": "Markdown. What the public record shows, with every claim sourced. No speculation.",
+    "geography": "Markdown. Where the centers cluster and why, if known."
+  },
+  "sources": [
+    { "title": "Document title (agency, date)", "url": "https://...", "local": "sources/optional-saved-copy.pdf" }
+  ]
+}

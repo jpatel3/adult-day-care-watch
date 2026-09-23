@@ -6,58 +6,211 @@
   "payer_program": "NJ FamilyCare (Medicaid) Managed Long Term Services and Supports, paid through five managed care organizations",
   "data_as_of": "2026-09-14",
   "compiled_on": "2026-09-19",
-  "map_center": [40.15, -74.5],
+  "map_center": [
+    40.15,
+    -74.5
+  ],
   "map_zoom": 8,
-  "bbox": [38.9, -75.6, 41.4, -73.85],
+  "bbox": [
+    38.9,
+    -75.6,
+    41.4,
+    -73.85
+  ],
   "billing_rules": "One per diem per participant per day (HCPCS S5102). At least 5 continuous hours on site, transportation time excluded and limited to 1 hour each way, maximum 5 days per calendar week. Participant must be clinically eligible: needs help with 2+ activities of daily living, or a daily skilled nursing service, or rehabilitation, or supervision in 3+ ADLs (N.J.A.C. 10:164).",
   "per_diem": [
-    { "effective": "2008-01-01", "rate": 85.88, "source": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf", "note": "Rate held near this level through FY2021 (NJADSA testimony)" },
-    { "effective": "2021-07-01", "rate": 86.10, "source": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf" },
-    { "effective": "2023-07-01", "rate": 89.55, "source": "https://nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates.pdf" },
-    { "effective": "2024-07-01", "rate": 92.08, "source": "https://www.horizonnjhealth.com/for-providers/news/updates-and-announcements/notice-to-adult-medical-day-care-amdc-providers" },
-    { "effective": "2025-07-01", "rate": 94.66, "source": "https://www.nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates%20changes_RD.pdf" }
+    {
+      "effective": "2008-01-01",
+      "rate": 85.88,
+      "source": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf",
+      "note": "Rate held near this level through FY2021 (NJADSA testimony)"
+    },
+    {
+      "effective": "2021-07-01",
+      "rate": 86.1,
+      "source": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf"
+    },
+    {
+      "effective": "2023-07-01",
+      "rate": 89.55,
+      "source": "https://nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates.pdf"
+    },
+    {
+      "effective": "2024-07-01",
+      "rate": 92.08,
+      "source": "https://www.horizonnjhealth.com/for-providers/news/updates-and-announcements/notice-to-adult-medical-day-care-amdc-providers"
+    },
+    {
+      "effective": "2025-07-01",
+      "rate": 94.66,
+      "source": "https://www.nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates%20changes_RD.pdf"
+    }
   ],
   "spending": [
-    { "year": 2019, "paid": 294014284.97, "recipients": 23393, "partial": false, "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "year": 2020, "paid": 324078029.28, "recipients": 22024, "partial": false, "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "year": 2021, "paid": 341785436.87, "recipients": 21278, "partial": false, "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "year": 2022, "paid": 314064806.56, "recipients": 20711, "partial": false, "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "year": 2023, "paid": 323681782.15, "recipients": 21867, "partial": false, "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "year": 2024, "paid": 227019132.83, "recipients": 21034, "partial": true, "note": "January through September 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" }
+    {
+      "year": 2019,
+      "paid": 294014284.97,
+      "recipients": 23393,
+      "partial": false,
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "year": 2020,
+      "paid": 324078029.28,
+      "recipients": 22024,
+      "partial": false,
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "year": 2021,
+      "paid": 341785436.87,
+      "recipients": 21278,
+      "partial": false,
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "year": 2022,
+      "paid": 314064806.56,
+      "recipients": 20711,
+      "partial": false,
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "year": 2023,
+      "paid": 323681782.15,
+      "recipients": 21867,
+      "partial": false,
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "year": 2024,
+      "paid": 227019132.83,
+      "recipients": 21034,
+      "partial": true,
+      "note": "January through September 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    }
   ],
   "spending_source_note": "Medicaid payments and recipient counts for Adult Day Health Services, all payers combined (managed care 99.9%, fee-for-service 0.1%), as presented by the NJ Office of the State Comptroller from Division of Medical Assistance and Health Services claims data, slides 11-13.",
   "historical": [
-    { "year": 2013, "paid": 195000000, "recipients": 14000, "providers": 134, "note": "Approximate; from the 2013 Comptroller investigative report", "source": "https://nj.gov/comptroller/news/docs/report_mfd_investigative_adc_03_06_13.pdf" }
+    {
+      "year": 2013,
+      "paid": 195000000,
+      "recipients": 14000,
+      "providers": 134,
+      "note": "Approximate; from the 2013 Comptroller investigative report",
+      "source": "https://nj.gov/comptroller/news/docs/report_mfd_investigative_adc_03_06_13.pdf"
+    }
   ],
-  "providers_count_official": { "value": 146, "as_of": "2023-12-31", "note": "ADHS providers serving Medicaid managed care enrollees, per HHS OIG audit A-02-24-01009", "source": "https://oig.hhs.gov/reports/all/2025/new-jersey-did-not-ensure-providers-complied-with-federal-and-state-requirements-at-all-20-adult-day-health-services-facilities-audited/" },
+  "providers_count_official": {
+    "value": 146,
+    "as_of": "2023-12-31",
+    "note": "ADHS providers serving Medicaid managed care enrollees, per HHS OIG audit A-02-24-01009",
+    "source": "https://oig.hhs.gov/reports/all/2025/new-jersey-did-not-ensure-providers-complied-with-federal-and-state-requirements-at-all-20-adult-day-health-services-facilities-audited/"
+  },
   "payers": [
-    { "name": "Fidelis Care", "paid": 708983378, "window": "2019 to Sept 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "name": "Horizon NJ Health", "paid": 568809456, "window": "2019 to Sept 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "name": "UnitedHealthcare Community Plan", "paid": 204986092, "window": "2019 to Sept 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "name": "Wellpoint (formerly Amerigroup)", "paid": 189582811, "window": "2019 to Sept 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" },
-    { "name": "Aetna Better Health", "paid": 150227803, "window": "2019 to Sept 2024", "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf" }
+    {
+      "name": "Fidelis Care",
+      "paid": 708983378,
+      "window": "2019 to Sept 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "name": "Horizon NJ Health",
+      "paid": 568809456,
+      "window": "2019 to Sept 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "name": "UnitedHealthcare Community Plan",
+      "paid": 204986092,
+      "window": "2019 to Sept 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "name": "Wellpoint (formerly Amerigroup)",
+      "paid": 189582811,
+      "window": "2019 to Sept 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    },
+    {
+      "name": "Aetna Better Health",
+      "paid": 150227803,
+      "window": "2019 to Sept 2024",
+      "source": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf"
+    }
   ],
   "narrative": {
     "how_paid": "New Jersey has two kinds of adult day care. **Adult Day Health Services** (also called Adult Medical Day Care) is licensed by the Department of Health, staffed with nurses, and paid by Medicaid at a flat per diem. **Social adult day care** needs no license and is funded by small state grants and private pay. Everything on this site is about the licensed, Medicaid-billing kind.\n\nA center is paid **one flat rate per participant per day**, set as a minimum in the state budget. The rate was about $86 from 2008 to 2023 and is $94.66 as of July 2025. A day is billable only if the participant is on site for 5 continuous hours, transport time excluded, and no more than 5 days a week. Eligibility is decided by the participant's managed care organization, not the center. Before 2008 centers assessed their own participants; the Department of Health revoked that after finding ineligible enrollments, and froze new licenses from 2008 to 2012.\n\nThe state pays the five managed care organizations a monthly capitation per member; they pay the centers. Fidelis and Horizon together carry about 70% of the dollars.",
     "what_not_public": "**Per-provider Medicaid payments.** The Comptroller's 2024 training deck shows the state has payment and recipient counts by provider, but nothing is published. The route is an OPRA request to the Division of Medical Assistance and Health Services for paid units and dollars for HCPCS S5102 by billing provider NPI, by year.\n\n**The people behind the LLCs.** The Department of Health roster names the licensed owner entity. Reaching individuals means the NJ business entity search, the NPPES authorized official (included here where an address matched), and the Medicaid Disclosure of Ownership form, which is not published.\n\n**Routine inspection reports.** The Department posts enforcement actions but not routine surveys. The federal Inspector General found in 2025 that 14 of 20 sampled centers had not been surveyed since before 2020.\n\n**Actual daily attendance versus licensed slots.** Not reported anywhere public. That ratio is the single most useful number for judging whether billing is plausible.",
-    "assessment": "The public record documents the program's historic failure mode clearly: billing for days a person was not present, and enrolling people who did not qualify. The Comptroller's 2013 investigation found a center billing every day for a participant who was on vacation for a month, another collecting for someone who never attended, and one with no participant signature on 133 of 228 sampled claims. The state's response was structural: eligibility moved to the managed care organizations.\n\nSince then the only systematic audit (released October 2023) checked claim logic across every center from 2016 to 2022 and found $946,087 in computer-detectable errors at 21 centers: billing a sixth or seventh day in a week, billing while a person was hospitalized, or two centers billing the same person on the same day. That is about 0.05% of the roughly $1.9 billion paid in the window. Nobody has published a chart-level attendance audit since 2013.\n\nMeanwhile spending per recipient rose from about 146 implied billed days a year in 2019 to about 172 in 2023, and spiked to about 187 in 2021 when centers were largely closed and billing remote days. The federal Inspector General reported in December 2025 that all 20 centers it visited were out of compliance and that state inspections had effectively lapsed for years. In 2025 the Department of Health caught one operator running without a license and, after a cease-and-desist, moving participants to a church.\n\nNone of this proves anything about any center listed here. It does say that the control that matters most, someone verifying attendance, has been thin, and that the data needed to check from outside is not public yet.",
+    "assessment": "The public record documents the program's historic failure mode clearly: billing for days a person was not present, and enrolling people who did not qualify. The Comptroller's 2013 investigation found a center billing every day for a participant who was on vacation for a month, another collecting for someone who never attended, and one with no participant signature on 133 of 228 sampled claims. The state's response was structural: eligibility moved to the managed care organizations.\n\nSince then the only systematic audit (released October 2023) checked claim logic across every center from 2016 to 2022 and found $946,087 in computer-detectable errors at 21 centers: billing a sixth or seventh day in a week, billing while a person was hospitalized, or two centers billing the same person on the same day. That is about 0.05% of the roughly $1.9 billion paid in the window. Nobody has published a chart-level attendance audit since 2013.\n\nMeanwhile spending per recipient rose from about 146 implied billed days a year in 2019 to about 165 in 2023, and spiked to about 187 in 2021 when centers were largely closed and billing remote days (paid ÷ recipients ÷ the minimum per diem for that fiscal year). The federal Inspector General reported in December 2025 that all 20 centers it visited were out of compliance and that state inspections had effectively lapsed for years. In 2025 the Department of Health caught one operator running without a license and, after a cease-and-desist, moving participants to a church.\n\nNone of this proves anything about any center listed here. It does say that the control that matters most, someone verifying attendance, has been thin, and that the data needed to check from outside is not public yet.",
     "geography": "Licenses concentrate in Middlesex (31), Bergen (17), Passaic (17), Essex (16), Monmouth (14), Hudson (11) and Union (11). Every other county has 7 or fewer. Centers recruit a culturally specific clientele and provide door-to-door transport, so they cluster where those communities live."
   },
   "sources": [
-    { "title": "NJ Office of the State Comptroller, Improper Medicaid Payments to Adult Medical Day Care Facilities (March 6, 2013)", "url": "https://nj.gov/comptroller/news/docs/report_mfd_investigative_adc_03_06_13.pdf", "local": "sources/OSC_2013_Investigative_Report_AMDC.pdf" },
-    { "title": "NJ OSC, Adult Medical Day Care Providers Improperly Billed NJ Medicaid (Oct 31, 2023)", "url": "https://www.nj.gov/comptroller/reports/2023/20231031.shtml" },
-    { "title": "NJ OSC, Guardrails Against Medicaid Fraud, Waste and Abuse: presentation for AMDC providers (Dec 4, 2024). Statewide payment, recipient and MCO figures, slides 11-13.", "url": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf", "local": "sources/OSC_2024-12-04_AMDC_Provider_Training.pdf" },
-    { "title": "NJ OSC, Medicaid Fraud Settlements and Notices dataset (data.nj.gov 3rh3-3u9n)", "url": "https://data.nj.gov/Government-Finance/Medicaid-Fraud-Settlements-and-Notices/3rh3-3u9n" },
-    { "title": "HHS Office of Inspector General, A-02-24-01009: New Jersey Did Not Ensure Providers Complied With Federal and State Requirements at All 20 Adult Day Health Services Facilities Audited (Dec 2025)", "url": "https://oig.hhs.gov/reports/all/2025/new-jersey-did-not-ensure-providers-complied-with-federal-and-state-requirements-at-all-20-adult-day-health-services-facilities-audited/", "local": "sources/HHS_OIG_2025-12_A-02-24-01009_NJ_ADHS.pdf" },
-    { "title": "NJ Department of Health, All Long-Term Care Facilities export (source of providers.csv)", "url": "https://healthapps.nj.gov/facilities/fssearch.aspx" },
-    { "title": "NJ Department of Health, Health Care Facility Enforcement Actions", "url": "https://www.nj.gov/health/healthfacilities/enforcement_actions.shtml" },
-    { "title": "NJ DHS public notice, AMDC per diem $89.55 effective July 1, 2023", "url": "https://nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates.pdf" },
-    { "title": "NJ DHS public notice, AMDC per diem $94.66 for FY2026", "url": "https://www.nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates%20changes_RD.pdf" },
-    { "title": "Horizon NJ Health, Notice to AMDC Providers: $92.08 effective July 1, 2024", "url": "https://www.horizonnjhealth.com/for-providers/news/updates-and-announcements/notice-to-adult-medical-day-care-amdc-providers" },
-    { "title": "N.J.A.C. 10:164-1.6, Basis of payment", "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-10-164-1-6" },
-    { "title": "NJ Adult Day Services Association, FY2023 budget testimony (rate history, cost pressures)", "url": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf", "local": "sources/NJADSA_FY2023_Budget_Testimony.pdf" },
-    { "title": "HHS ASPE, New Jersey adult day services regulatory overview", "url": "https://aspe.hhs.gov/sites/default/files/private/pdf/109706/adultdayNJ.pdf", "local": "sources/ASPE_NJ_Adult_Day_Overview.pdf" },
-    { "title": "US DOJ, Edison Adult Medical Daycare $2.72M False Claims Act settlement (2017)", "url": "https://www.justice.gov/usao-nj/pr/adult-daycare-facility-agrees-272-million-settlement-resolve-allegations-violating-false" },
-    { "title": "CMS NPPES NPI Registry API (source of npi_registry.csv)", "url": "https://npiregistry.cms.hhs.gov/api/" }
+    {
+      "title": "NJ Office of the State Comptroller, Improper Medicaid Payments to Adult Medical Day Care Facilities (March 6, 2013)",
+      "url": "https://nj.gov/comptroller/news/docs/report_mfd_investigative_adc_03_06_13.pdf",
+      "local": "sources/OSC_2013_Investigative_Report_AMDC.pdf"
+    },
+    {
+      "title": "NJ OSC, Adult Medical Day Care Providers Improperly Billed NJ Medicaid (Oct 31, 2023)",
+      "url": "https://www.nj.gov/comptroller/reports/2023/20231031.shtml"
+    },
+    {
+      "title": "NJ OSC, Guardrails Against Medicaid Fraud, Waste and Abuse: presentation for AMDC providers (Dec 4, 2024). Statewide payment, recipient and MCO figures, slides 11-13.",
+      "url": "https://www.nj.gov/comptroller/library/Resources/AMDC_Provider_Training12_04_2024.pdf",
+      "local": "sources/OSC_2024-12-04_AMDC_Provider_Training.pdf"
+    },
+    {
+      "title": "NJ OSC, Medicaid Fraud Settlements and Notices dataset (data.nj.gov 3rh3-3u9n)",
+      "url": "https://data.nj.gov/Government-Finance/Medicaid-Fraud-Settlements-and-Notices/3rh3-3u9n"
+    },
+    {
+      "title": "HHS Office of Inspector General, A-02-24-01009: New Jersey Did Not Ensure Providers Complied With Federal and State Requirements at All 20 Adult Day Health Services Facilities Audited (Dec 2025)",
+      "url": "https://oig.hhs.gov/reports/all/2025/new-jersey-did-not-ensure-providers-complied-with-federal-and-state-requirements-at-all-20-adult-day-health-services-facilities-audited/",
+      "local": "sources/HHS_OIG_2025-12_A-02-24-01009_NJ_ADHS.pdf"
+    },
+    {
+      "title": "NJ Department of Health, All Long-Term Care Facilities export (source of providers.csv)",
+      "url": "https://healthapps.nj.gov/facilities/fssearch.aspx"
+    },
+    {
+      "title": "NJ Department of Health, Health Care Facility Enforcement Actions",
+      "url": "https://www.nj.gov/health/healthfacilities/enforcement_actions.shtml"
+    },
+    {
+      "title": "NJ DHS public notice, AMDC per diem $89.55 effective July 1, 2023",
+      "url": "https://nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates.pdf"
+    },
+    {
+      "title": "NJ DHS public notice, AMDC per diem $94.66 for FY2026",
+      "url": "https://www.nj.gov/humanservices/providers/grants/public/publicnoticefiles/Notice%20Adult%20Day%20rates%20changes_RD.pdf"
+    },
+    {
+      "title": "Horizon NJ Health, Notice to AMDC Providers: $92.08 effective July 1, 2024",
+      "url": "https://www.horizonnjhealth.com/for-providers/news/updates-and-announcements/notice-to-adult-medical-day-care-amdc-providers"
+    },
+    {
+      "title": "N.J.A.C. 10:164-1.6, Basis of payment",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-10-164-1-6"
+    },
+    {
+      "title": "NJ Adult Day Services Association, FY2023 budget testimony (rate history, cost pressures)",
+      "url": "https://pub.njleg.gov/publications/budget/governors-budget/2023/03212022/Felder_D.pdf",
+      "local": "sources/NJADSA_FY2023_Budget_Testimony.pdf"
+    },
+    {
+      "title": "HHS ASPE, New Jersey adult day services regulatory overview",
+      "url": "https://aspe.hhs.gov/sites/default/files/private/pdf/109706/adultdayNJ.pdf",
+      "local": "sources/ASPE_NJ_Adult_Day_Overview.pdf"
+    },
+    {
+      "title": "US DOJ, Edison Adult Medical Daycare $2.72M False Claims Act settlement (2017)",
+      "url": "https://www.justice.gov/usao-nj/pr/adult-daycare-facility-agrees-272-million-settlement-resolve-allegations-violating-false"
+    },
+    {
+      "title": "CMS NPPES NPI Registry API (source of npi_registry.csv)",
+      "url": "https://npiregistry.cms.hhs.gov/api/"
+    }
   ]
 }
