@@ -1,0 +1,10 @@
+Data license: CC0 1.0 Universal (Public Domain Dedication)
+
+The compiled data files under states/**/ (CSV and JSON) are dedicated to the
+public domain under CC0 1.0: https://creativecommons.org/publicdomain/zero/1.0/
+
+The underlying records are public records of the agencies named in each
+state's config.json (licensing rosters, Medicaid payment reports, enforcement
+notices) and of the U.S. federal NPI registry. Source PDFs under
+states/**/sources/ are reproduced as published by those agencies and remain
+subject to whatever terms those agencies apply.
